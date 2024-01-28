@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+		@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+		body {
+			font-family: "Poppins", sans-serif;
+			font-size: 13px;
+			background: rgb(204, 204, 204);
+		}
+
+		.book {
+			margin: 0;
+			padding: 0;
+			transform-origin: 0 0;
+		}
+
+		.A4 {
+			background: white;
+			width: 21cm;
+			height: 29.7cm;
+			display: block;
+			margin: 50px auto;
+			padding: 60px;
+			box-shadow: 0 0 0.5cm rgb(0 0 0 / 50%);
+			overflow-y: scroll; 
+			box-sizing: border-box;
+		}
+
+		@media print {
+			.page-break {
+				display: block;
+				page-break-before: always;
+			}
+
+			/* size: A4 portrait; */
+		}
+
+		@media print {
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			.A4 {
+				box-shadow: none;
+				margin: 0;
+				width: auto;
+				height: auto;
+			}
+
+			.noprint {
+				display: none;
+			}
+
+			.enable-print {
+				display: block;
+			}
+		}
+
+		.table> :not(caption)>*>* {
+			padding: 0rem 0.5em;
+		}
+
+		.isitabel {
+			font-size: 11px;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			border: 1px solid #cfcfcf;
+		}
+
+		.tanpa-tabel {
+			border-color: #dee2e603;
+		}
