@@ -5,6 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CV Generator Otomatis untuk bekerja di Jerman, Kapal dan Hotel">
+    <meta name="description" content="Ingin dapat pekerjaan di Kapal dan Hotel diJerman atau Eropa? Gunakan Aplikasi untuk CV generator otomatis bagi yang ingin bekerja di Hotel atau Kapal Laut.">
+    <meta name="author" content="cv-gen">
+    <meta name="keywords" content="CV, CV Generator, Curriculum Vitae, CV for Work in Germany, CV For Seafarer, CV for Cruise Ship and Hotel">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CV Generator Otomatis untuk bekerja di Jerman, Kapal dan Hotel" />
+    <meta property="og:description" content="Ingin dapat pekerjaan di Kapal dan Hotel diJerman atau Eropa? Gunakan Aplikasi untuk CV generator otomatis bagi yang ingin bekerja di Hotel atau Kapal Laut." />
+    <meta property="og:url" content="https://cv-gen.com/" />
+    <meta property="og:image" content="https://cv-gen.com/img/cv-gen-medsos.jpg" />
 
     <link rel="shortcut icon" href="../img/typewriter.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,8 +22,10 @@
     <title>CV GENERATOR</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.css" integrity="sha512-NCJ1O5tCMq4DK670CblvRiob3bb5PAxJ7MALAz2cV40T9RgNMrJSAwJKy0oz20Wu7TDn9Z2WnveirOeHmpaIlA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="/css/pdf.css">
+    <link rel='stylesheet' href='/css/yearpicker.css' />
     <style>
         @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
         @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
@@ -160,11 +172,7 @@
         }
 
         .isitabel {
-            font-size: 11px;
-        }
-
-        .judultabel {
-            font-size: 12px;
+            font-size: 13px;
         }
 
         .isi-cv {
@@ -207,14 +215,11 @@
         .accordion-body {
             padding: 0;
         }
-
-        .swal2-styled.swal2-confirm {
-            background-color: #065a5e !important;
-        }
     </style>
 </head>
 
 <body>
+    <!-- Messenger Chat plugin Code -->
     <div id="fb-root"></div>
 
     <!-- Your Chat plugin code -->
@@ -254,106 +259,66 @@
 
         <div class="container ">
             <div class="row">
-                <div class="col-lg-3 mb-3">
-                    <div class="accordion accordion-flush mb-3 d-block d-lg-none d-xl-none" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    MAIN MENU
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item active" aria-current="true">MAIN MENU</li>
-                                        <li class="list-group-item"><a href="/pilihan">Home</a></li>
-                                        <li class="list-group-item"><a href="/deck_engine">CV for Seafarer</a></li>
-                                        <li class="list-group-item"><a href="/cruise_ship">CV for Cruise Ship</a></li>
-                                        <li class="list-group-item"><a href="/lebenslauf">Lebenslauf</a></li>
-                                        <li class="list-group-item"><a href="/genpublic">CV for Public</a></li>
-                                        <li class="list-group-item"><a href="/gform">Job Vacancy</a></li>
-                                        <li class="list-group-item"><a href="/profil">Profile</a></li>
-                                        <li class="list-group-item"><a href="/logout">Logout</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <ul class="list-group d-none d-lg-block d-xl-block">
-                        <li class="list-group-item active" aria-current="true">MAIN MENU</li>
-                        <li class="list-group-item"><a href="/pilihan">Home</a></li>
-                        <li class="list-group-item"><a href="/deck_engine">CV for Seafarer</a></li>
-                        <li class="list-group-item"><a href="/cruise_ship">CV for Cruise Ship</a></li>
-                        <li class="list-group-item"><a href="/lebenslauf">Lebenslauf</a></li>
-                        <li class="list-group-item"><a href="/genpublic">CV for Public</a></li>
-                        <li class="list-group-item"><a href="/gform">Job Vacancy</a></li>
-                        <li class="list-group-item"><a href="/profil">Profile</a></li>
-                        <li class="list-group-item"><a href="/logout">Logout</a></li>
-                    </ul>
-                    <div class="card shadow-sm mt-3 d-none d-lg-block d-xl-block">
-                        <div class="card-body kontak">
-                            <h5 class="card-title text-center">FEEDBACK/CONTACT</h5>
-                            <div class="text-center">
-                                <p class="text-center">Need help? Click here</p>
-                            </div>
-                            <div class="d-none d-lg-block d-xl-block">
-                                <a href="https://wa.me/+628115995950?text=Hi%20Admin,%20could%20you%20please%20explain%20in%20more%20detail%20about%20this%20CV-Generator" class="btn btn-success w-100"><i class="bi bi-whatsapp"></i> Whatsapp</a>
-                            </div>
-                            <br>
-                            <div class="text-center">
-                                <a href="<?php echo base_url('/privacy') ?>">Privacy Policy</a> <br>
-                                <a href="<?php echo base_url('/imprint') ?>">Imprint</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg mb-5">
+                <div class="col-lg-30 mb-5">
                     <ul class="list-group">
-                        <li class="list-group-item active" aria-current="true">GENERATE CV</li>
-                        <li class="list-group-item text-center p-3">
-                            <div class="btn-group w-100  " role="group" aria-label="Basic example">
-                                <button type="button" class="shadow-sm p-2  btn btn-warning btn-lg " onclick="document.getElementById('frame_deckengine').contentWindow.download();"><i class="bi bi-cloud-download-fill"></i> SAVE PDF <small>(Default Size)</small></button>
-                                <button type="button" class="shadow-sm p-2  btn btn-danger btn-lg" onclick="document.getElementById('frame_deckengine').contentWindow.print();"><i class="bi bi-printer-fill"></i> PRINT/SAVE <small>(Custom Size)</small> </button>
-                            </div>
-                        </li>
-                        <li class="list-group-item text-center">
+                        <li class="list-group-item active" aria-current="true">Impressum</li>
+                        <li class="list-group-item">
+                            <h1>OWNER OF THE WEBSITE</h1>
+                            <p>Tri Pramedi Agusadharin</p>
 
+                            <h2>INFORMATION ABOUT THE COMPANY</h2>
 
-                            <div class="ratio ratio-1x1">
-                                <iframe class="embed-responsive-item" name="frame" id="frame" src="<?= base_url('/pdf_view_deckengine') ?>"></iframe>
-                            </div>
+                            <p>Jl. Pahlawan No. 1 Kota Baubau, Sulawesi Tenggara, Indonesia <br>
+                                E-Mail: ami@cv-gen.com <br>
+                                E-Mail: tripramedi@gmail.com <br>
+                                Tel. 6285298649951 <br>
+                                Tel. 6285256947201</p>
 
-                            <iframe class="embed-responsive-item" width="0px" height="0px" name="frame_deckengine" id="frame_deckengine" src="<?= base_url('/pdf_print_deckengine') ?>"></iframe>
+                            <h2>INFORMATION ABOUT THE COMPANY REGISTRATION</h2>
+
+                            <p>Information on online dispute resolution: The EU Commission has created an internet platform for online dispute resolution (so-called “OS platform”). The OS platform serves as a contact point for the out-of-court settlement of disputes regarding contractual obligations arising from online purchase contracts. You can access the OS platform using the following link: <a href="http://ec.euopa.eu/consumers/odr">http://ec.euopa.eu/consumers/odr</a> “Notice in accordance with Section 36 of the Consumer Dispute Settlement Act (VSBG)..</p>
+
                         </li>
                     </ul>
                 </div>
 
-                <div class="container-fluid fixed-bottom" style="padding:0px !important; ">
-                    <footer class="footer mt-auto py-2 " style="background: #0a969d;">
-                        <div class="container text-center">
-                            <a href="https://www.cv-gen.com/" target="_blank" rel="noopener noreferrer" class="text-white">Copyright &copy;. 2021-<script>
-                                    document.write(new Date().getFullYear())
-                                </script> | www.cv-gen.com</a>
-                        </div>
-                    </footer>
-                </div>
+                <!-- MODAL -->
+
             </div>
         </div>
+    </div>
+    <div class="container-fluid fixed-bottom" style="padding:0px !important; ">
+        <footer class="footer mt-auto py-2 " style="background: #0a969d;">
+            <div class="container text-center">
+                <a href="https://www.cv-gen.com/" target="_blank" rel="noopener noreferrer" class="text-white">Copyright &copy;. 2021-<script>
+                        document.write(new Date().getFullYear())
+                    </script> | www.cv-gen.com</a>
+            </div>
+        </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
-        function download() {
-            const element = window.getElementById("contentToPrint");
-            html2pdf()
-                .from(element)
-                .save();
+        function loading() {
+
+            Swal.fire({
+                html: 'Please wait...', // add html attribute if you want or remove
+                allowOutsideClick: false,
+                showCancelButton: false,
+                showConfirmButton: false,
+                willOpen: () => {
+                    Swal.showLoading()
+                },
+            });
+        }
+        const swal = $('.swal').data('swal');
+        if (swal) {
+            Swal.fire({
+                html: swal,
+            })
         }
     </script>
 </body>

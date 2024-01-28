@@ -360,7 +360,10 @@
                             </div>
                             <br>
                             <div class="text-center">
-                                <a href="<?php echo base_url('/privacy') ?>">Privacy Policy</a>
+                                <a href="<?php echo base_url('/privacy') ?>">Privacy Policy</a> <br>
+                                <a href="<?php echo base_url('/imprint') ?>">Imprint</a>
+
+
                             </div>
                         </div>
                     </div>

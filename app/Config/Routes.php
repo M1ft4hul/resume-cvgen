@@ -25,6 +25,7 @@ $routes->set404Override();
 
 $routes->get('/', 'Home::index');
 $routes->get('/privacy', 'Home::privacy');
+$routes->get('/imprint', 'Home::imprint');
 $routes->get('/pilihan', 'Home::pilihan', ['filter' => 'auth_user']);
 
 $routes->get('/login', 'Login::index');

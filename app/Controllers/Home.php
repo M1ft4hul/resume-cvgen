@@ -14,6 +14,11 @@ class Home extends BaseController
         return view('privacy');
     }
 
+    public function imprint()
+    {
+        return view('imprint');
+    }
+
     public function pilihan()
     {
         $biodata['biodata'] = $this->Muser->find(session()->get('id'));

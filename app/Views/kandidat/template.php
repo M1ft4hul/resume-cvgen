@@ -225,6 +225,7 @@
         .swal2-styled.swal2-confirm {
             background-color: #065a5e !important;
         }
+
         span.mata {
             position: relative;
             top: -30px;
@@ -370,6 +371,11 @@
                             </div>
                             <div class="d-none d-lg-block d-xl-block">
                                 <a href="https://wa.me/+628115995950?text=Hi%20Admin,%20could%20you%20please%20explain%20in%20more%20detail%20about%20this%20CV-Generator" class="btn btn-success w-100"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+                            </div>
+                            <br>
+                            <div class="text-center">
+                                <a href="<?php echo base_url('/privacy') ?>">Privacy Policy</a> <br>
+                                <a href="<?php echo base_url('/imprint') ?>">Imprint</a>
                             </div>
                         </div>
                     </div>
